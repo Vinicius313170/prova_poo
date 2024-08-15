@@ -1,0 +1,139 @@
+
+                                                                            //questão 1
+int ta = 45;
+float ata = 19.5f;
+string tata = "batata";
+bool atata = ta>ata;
+Console.WriteLine(ta);
+Console.WriteLine(ata);
+Console.WriteLine(tata);
+Console.WriteLine(atata);
+                                                                            //questão 2
+Console.WriteLine("digite os valores necessarios");
+int a1 = int.Parse(Console.ReadLine());
+int a2 = int.Parse(Console.ReadLine());
+int soma = a1 + a2;
+int subt = a1 - a2;
+int mult = a1 * a2;
+int divisao = a1 / a2;
+Console.WriteLine($"a soma é {soma}");
+Console.WriteLine($"a subtração é {subt}");
+Console.WriteLine($"a multiplicação é {mult}");
+Console.WriteLine($"a divisão é {divisao}");
+                                                                            //questão 3 
+
+Console.WriteLine("digite sua idade");
+int b1 = int.Parse(Console.ReadLine());
+Console.WriteLine("digite seu nome");
+string b2 = Console.ReadLine();
+Console.WriteLine($"Olá, {b2}, você tem {b1} anos.");
+                                                                            //questão 4
+Console.WriteLine("digite o numero");
+//se colocar numero grande da errado
+int c1 = int.Parse(Console.ReadLine());
+if (c1==0){
+    Console.WriteLine("seu numero é zero");
+}else if (c1>0){
+    Console.WriteLine("seu numero é positivo");
+}else{
+    Console.WriteLine("seu numero é negativo");
+}
+                                                                            //questão 5
+//for (int i =1; i< 11;i++){Console.WriteLine(i);}
+                                                                            //questão 6
+
+Console.WriteLine("digite sua idade");
+int d1 = int.Parse(Console.ReadLine());
+if (d1>=18){
+    Console.WriteLine("você é maior de idade e esta apto(a) a dirigir e a votar");
+}else{
+    Console.WriteLine("você não é maior de idade e não esta apto(a) a dirigir e a votar");
+}
+                                                                           //questão 7
+static void Calmedia(float nt1, float nt2, float nt3){
+    float md = (nt1+nt2+nt3)/3;
+    Console.WriteLine(md);
+}
+Calmedia(4.3f, 5.9f, 8.2f);
+                                                                           //QUESTÃO 8
+Console.WriteLine("Digite 3 numeros");
+string[] numeros = Console.ReadLine().Split(',');
+Array.Sort(numeros);
+Console.WriteLine($"{numeros[0]} é maior e {numeros[2]} é o maior");
+
+//ou
+
+Console.WriteLine("Digite os valores");
+        int Num1 = int.Parse(Console.ReadLine());
+        int Num2 = int.Parse(Console.ReadLine());
+        int Num3 = int.Parse(Console.ReadLine());
+ if (Num1 > Num2)
+{
+    if (Num2 > Num3)
+    {
+    int M1 = Num1;
+    int M2 = Num2;
+    int M3 = Num3;
+    Console.WriteLine($"Maior,{M1} ,  Menor ,{M3} ,");
+    }
+        else if (Num3 > Num1)
+    {
+     int M1 = Num3;
+                int M2 = Num1;
+                int M3 = Num2;
+                Console.WriteLine($"Maior,{M1} ,  Menor ,{M3} ,");
+            }
+            else
+            {
+                int M1 = Num1;
+                int M2 = Num3;
+                int M3 = Num2;
+                Console.WriteLine($"Maior,{M1} ,  Menor ,{M3} ,");
+            }
+        }
+        else
+        {
+            if (Num2 > Num3)
+            {
+                int M1 = Num2;
+
+                if (Num3 > Num1)
+                {
+                    int M2 = Num3;
+                    int M3 = Num1;
+                    Console.WriteLine($"Maior,{M1} ,  Menor ,{M3} ,");
+                }
+                else
+                {
+                    int M2 = Num1;
+                    int M3 = Num3;
+                    Console.WriteLine($"Maior,{M1} ,  Menor ,{M3} ,");
+                }
+            }
+            else
+            {
+                int M1 = Num3;
+                int M2 = Num2;
+                int M3 = Num1;
+                Console.WriteLine($"Maior,{M1} ,  Menor ,{M3} ,");
+            }
+        }
+                                                                            //questão 9 
+Console.WriteLine("digite um numero");
+int n = int.Parse(Console.ReadLine());
+int numero = n;
+int num2 = n;
+while(numero>0){
+    Console.WriteLine("digite um numero de novo");
+    n = int.Parse(Console.ReadLine());
+    numero = n;
+    num2 = num2 + n;
+}
+Console.WriteLine(num2);
+                                                                            // questão 10
+Console.WriteLine("digite o valor em reais");
+float reais = float.Parse(Console.ReadLine());
+Console.WriteLine("digite a taxa de câmbio");
+float taxa = float.Parse(Console.ReadLine());
+float res = reais*taxa;
+Console.WriteLine($"O valor em dolares é {res}");
